@@ -1,8 +1,8 @@
 package main
 
 import (
-	"Olexander63/headfirstgo/packagesexercise/dates"
 	"fmt"
+	"github.com/Olexander63/headfirstgo/packagesexercise/dates"
 )
 
 func main() {
