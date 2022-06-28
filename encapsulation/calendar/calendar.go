@@ -1,28 +1,24 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	calendar "github.com/Olexander63/headfistgo/encapsulation/date"
+	"log"
+)
 
-type Date struct {
-	Year  int
-	Month int
-	Day   int
-}
-
-func (d *Date) SetYear(year int) {
-	d.Year = year
-}
-
-func (d *Date) SetMonth(month int) {
-	d.Month = month
-}
-
-func (d *Date) SetDay(day int) {
-	d.Day = day
-}
 func main() {
-	date := Date{}
-	date.SetYear(2019)
-	date.SetMonth(5)
-	date.SetDay(27)
+	date := calendar.Date{}
+	err := date.SetYear(2022)
+	if err != nil {
+		log.Fatal(err)
+	}
+	err = date.SetMonth(5)
+	if err != nil {
+		log.Fatal(err)
+	}
+	err = date.SetDay(27)
+	if err != nil {
+		log.Fatal(err)
+	}
 	fmt.Println(date)
 }
