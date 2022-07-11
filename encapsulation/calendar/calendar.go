@@ -2,8 +2,9 @@ package main
 
 import (
 	"fmt"
-	calendar "github.com/Olexander63/headfistgo/encapsulation/date"
 	"log"
+
+	calendar "github.com/Olexander63/headfirstgo/encapsulation/date"
 )
 
 func main() {
