@@ -2,9 +2,8 @@ package main
 
 import (
 	"fmt"
+	"headfirstgo/encapsulation/remindme/calendar"
 	"log"
-
-	calendar "github.com/Olexander63/headfirstgo/encapsulation/date"
 )
 
 func main() {
